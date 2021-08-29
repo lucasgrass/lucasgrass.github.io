@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <script type="text/javascript" charset="utf-8" src="calc.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="onLoad()">
+
+    <form  id="formatation" name="calc">
+        <input id="visor" type="text" name="visor"></input>
+        <br>
+            <input class="up" type="button" name="buttonC" value="CE" onclick="onLoad()"></input>
+            <input class="up" type="button" name="buttonin" value="+/-" onclick="invert()"></input>
+            <input class="up" type="button" name="buttonporce" value="%" onclick="porcentagem(value)"></input>
+            <input class="right" type="button" name="buttondiv" value="÷" onclick="onClick('/')"></input>
+            <br>
+            <input class="number" type="button" name="button7" value="7" onclick="onClick(value)"></input>
+            <input class="number" type="button" name="button8" value="8" onclick="onClick(value)"></input>
+            <input class="number" type="button" name="button9" value="9" onclick="onClick(value)"></input>
+            <input class="right" type="button" name="buttonx" value="x" onclick="onClick('*')"></input>
+            <br>
+            <input class="number" type="button" name="button4" value="4" onclick="onClick(value)"></input>
+            <input class="number" type="button" name="button5" value="5" onclick="onClick(value)"></input>
+            <input class="number" type="button" name="button6" value="6" onclick="onClick(value)"></input>
+            <input class="right" type="button" name="buttonless" value="-" onclick="onClick(value)"></input>
+            <br>
+            <input class="number" type="button" name="button1" value="1" onclick="onClick(value)"></input>
+            <input class="number" type="button" name="button2" value="2" onclick="onClick(value)"></input>
+            <input class="number" type="button" name="button3" value="3" onclick="onClick(value)"></input>
+            <input class="right" type="button" name="buttonplus" value="+" onclick="onClick(value)"></input>
+            <br>
+            <input id="zero_size" class="number" type="button" name="button0" value="0" onclick="onClick(value)"></input>
+            <input class="number" type="button" name="buttonfloat" value="." onclick="onClick(value)"></input>
+            <input class="right" type="button" name="buttonequal" value="=" onclick="result()"></input>
+    </form>
+</body>
+</html>
